@@ -70,9 +70,3 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 
 
 }
-
-
-/*
-.antMatchers("/user").hasRole("USER")
-.antMatchers("/").permitAll()
-*/
