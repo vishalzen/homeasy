@@ -140,6 +140,13 @@ public class StudentController extends ApplicationController{
         return "redirect:/user/";
     }
 
+    @RequestMapping("/contact")
+    public ModelAndView contactPage(Principal principal){
+        ModelAndView mv = new ModelAndView();
+        mv.setViewName("contact");
+        return mv;
+    }
+
     @PostMapping("/mess/request")
     public String postMessRequest(MessRequest messRequest, Principal principal) {
         Date date = Calendar.getInstance().getTime();
